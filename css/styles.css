@@ -1,0 +1,138 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilo body*/
+body {
+    background-color: #EBD7C6;
+}
+
+/*estilos header*/
+header {
+    background: linear-gradient(135deg, #A1664B, #D1A17A);
+    display: flex;
+    flex-direction: row;
+    min-height: 96px;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    height: 72px;
+    width: 72px;
+}
+
+.textoHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 1.6rem;
+}
+
+.textoHeader h3 {
+    color: #FAF7F4;
+}
+
+/*estilos contenedores (de las tarjetas de articulos)*/
+#contenedorCatalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#contenedorCatalogo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+    background-color: #FFF8EE;
+    border: 1px solid #D1A17A;
+    border-radius: 8px;
+    max-width: 220px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 16px auto;
+}
+
+#contenedorCatalogo img {
+    width: 100%;
+    max-width: 220px;
+    max-height: 220px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+#contenedorCatalogo h3 {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+#contenedorCatalogo button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #884A39;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#contenedorCatalogo button:hover {
+    background-color: #C88558;
+}
+
+/*Estilos de la tabla (recibo)*/
+table {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+}
+
+th {
+    background-color: #884A39;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    min-width: 40px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #A33236;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #831F28;
+}
+
+#filaEliminar{
+    max-width: 2.1rem;}
+
+/*Estilos de la "etiqueta" (por asi decirlo, me refiero a lo que aparece abajo indicando el precio total de todo)*/
+#totalCarrito {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 6px 22vw auto auto;
+    text-align: right;
+    color: #333;
+}
+
